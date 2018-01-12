@@ -680,10 +680,11 @@ var DoRead = function (){
             var dig8=hex2a(assignment(resp.register[57]).toString(16));
             Barcode=dig1+dig2+dig3+dig4+dig5+dig6+dig7+dig8;
           }
-          console.log(Barcode)
+
           if(isNaN(Barcode)){
             Barcode='0';
           }
+          console.log(Barcode)
 	        if(secBarcode>=60&&!isNaN(Barcode)){
               writedataBarcode(Barcode,"pol_byd_Barcode_L41.log");
               secBarcode=0;
