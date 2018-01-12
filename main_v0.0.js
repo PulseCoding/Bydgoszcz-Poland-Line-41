@@ -684,7 +684,7 @@ var DoRead = function (){
           if(isNaN(Barcode)){
             Barcode='0';
           }
-          console.log(Barcode)
+          console.log(isNaN(Barcode))
 	        if(secBarcode>=60&&!isNaN(Barcode)){
               writedataBarcode(Barcode,"pol_byd_Barcode_L41.log");
               secBarcode=0;
